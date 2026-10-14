@@ -1,0 +1,11 @@
+*.ozn
+*.dzn
+*.png
+*.out
+*.so
+*.dot
+input_backups/
+backups/
+output/
+tmp/
+tmp.mzn
