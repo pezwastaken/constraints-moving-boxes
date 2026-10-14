@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: white;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .row-container {
+            margin-bottom: 40px; /* Space between rows */
+        }
+
+        .image-grid {
+            display: flex;       /* Changed from grid to flex */
+            gap: 20px;
+            height: 400px;      /* Your capped height */
+            width: 100%;
+            margin-bottom: 100px;
+        }
+
+        .image-grid img {
+            /* This is the key: it forces the image to respect the container height 
+               while maintaining its aspect ratio */
+            height: 100%;
+            width: auto;         /* Allow width to adjust naturally */
+            max-width: 50%;      /* Keep them side-by-side */
+            object-fit: contain; /* Ensure the whole image is visible */
+            display: block;
+        }
+
+        .optional-text {
+            font-size: 0.9em;
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Left shows the conveyor belt status. Right shows the pallet Configuration.
+    </h2>
+
+    <!-- <div class="row-container"> -->
+    <!--     <div class="optional-text">Optional text above the images...</div> -->
+    <!--     <div class="image-grid"> -->
+    <!--         <img src="https://placehold.co/400x250" alt="img1_a"> -->
+    <!--         <img src="https://placehold.co/400x250" alt="img1_b"> -->
+    <!--     </div> -->
+    <!--     <div class="optional-text">Optional text below the images...</div> -->
+    <!-- </div> -->
+
