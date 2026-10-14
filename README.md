@@ -107,7 +107,7 @@ The check is sound but not complete: if it reports UNSAT the CSP is UNSAT, but t
 
 ## Report
 
-The full write-up (modeling steps, symmetry breaking attempts, benchmarks) is available in the project report: *Robot Movement Planning*.
+The full write-up (modeling steps, symmetry breaking attempts, benchmarks) is available in the project report: *Robot Movement Planning* (constraint.pdf).
 
 ## Authors
 
